@@ -63,7 +63,7 @@ const ContactMailTemplate = ({ name, email, message, }: Props) => (
             <Item>
                 <Image
                     height="auto"
-                    src="%PUBLIC_URL%/Logo-gustavo-2.png"
+                    src={window.location.origin + "/Logo-gustavo-2.png"}
                     style={{ margin: "0 auto "}}
                     width={200}
                 />
