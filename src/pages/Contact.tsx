@@ -51,6 +51,10 @@ const Contact = () => {
                     messageElement.classList.remove("success");
                 }
 
+                setInterval(() => {
+                    messageElement.classList.add("hidden");
+                }, 3000)
+
                 messageElement.classList.add("error");
             } else {
                 validFields++;
@@ -76,6 +80,10 @@ const Contact = () => {
                     if (messageElement.classList.contains("error")) {
                         messageElement.classList.remove("error");
                     }
+
+                    setInterval(() => {
+                        messageElement.classList.add("hidden");
+                    }, 3000)
 
                     messageElement.classList.add("success");
                 }
