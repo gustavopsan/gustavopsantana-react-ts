@@ -88,7 +88,7 @@ const ContactMailTemplate = ({ name, email, message, }: Props) => (
                     <Item style={{ height: 15 }} />
                     <Item>
                         <Span fontSize={15} fontWeight="bold" color={textColor}>Data: </Span>
-                        <Span fontSize={15} color={textColor}>{DATE.getDate()} de {Months[DATE.getMonth()]} às {DATE.getHours().toFixed(2)}:{DATE.getMinutes().toFixed(2)}</Span>
+                        <Span fontSize={15} color={textColor}>{DATE.getDate()} de {Months[DATE.getMonth()]} às {DATE.getHours()}:{DATE.getMinutes()}</Span>
                     </Item>
                     <Item>
                         <Span fontSize={15} fontWeight="bold" color={textColor}>Nome: </Span>
