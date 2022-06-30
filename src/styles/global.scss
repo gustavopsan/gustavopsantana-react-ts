@@ -21,6 +21,11 @@ body {
     src: url("../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf")
 }
 
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
 .link-arede {
     text-decoration: none;
     color: #fff;

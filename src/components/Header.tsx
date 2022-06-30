@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <header className="header-element">
             <div>
-                <Logo/>
+                <Logo className="header-logo"/>
                 <Menu/>
             </div>
         </header>
