@@ -7,8 +7,7 @@ import Container from '../components/Container';
 import WhiteTitle from '../components/WhiteTitle';
 import Button from '../components/Button';
 
-import manTablet from '../assets/img/man-tablet.jpg'
-import yellowPen from '../assets/img/yellow_pen.webp';
+import manTablet from '../assets/img/man-tablet.webp'
 import blueWall from '../assets/img/blue_wall.webp';
 import contactDesk from '../assets/img/contact-background.webp';
 
