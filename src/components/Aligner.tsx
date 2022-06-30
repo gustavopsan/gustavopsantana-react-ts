@@ -6,6 +6,8 @@ export interface AlignerProps {
     vertical?: boolean;
     horizontal?: boolean;
     center?: boolean;
+    end?: boolean;
+    start?: boolean;
 }
 
 const Aligner = (props:AlignerProps) => {
@@ -14,7 +16,9 @@ const Aligner = (props:AlignerProps) => {
             [
                 props.horizontal ? "aligner-horizontal" : "",
                 props.vertical ? "aligner-vertical" : "",
-                props.center ? "aligner-center" : ""
+                props.center ? "aligner-center" : "",
+                props.end ? "aligner-end" : "",
+                props.start ? "aligner-start" : ""
             ].join(" ")
         }>
             {props.children}

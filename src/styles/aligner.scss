@@ -26,3 +26,11 @@
 .aligner-center {
     justify-content: center;
 }
+
+.aligner-start {
+    align-self: flex-start;
+}
+
+.aligner-end {
+    align-self: flex-end;
+}

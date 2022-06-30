@@ -101,7 +101,7 @@ const Contact = () => {
                 <Aligner horizontal>
                     <Aligner vertical>
                         <WhiteTitle>
-                            Apenas uma mensagem e podemos firmar uma parceria que levará sua empresa a ter visibilidade na internet.
+                            Apenas uma mensagem e podemos firmar uma parceria que levará sua empresa a ter visibilidade na internet!
                         </WhiteTitle>
                         <WhiteTitle>Entre em contato!</WhiteTitle>
                     </Aligner>
