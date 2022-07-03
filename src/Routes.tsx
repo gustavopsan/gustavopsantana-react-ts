@@ -6,8 +6,6 @@ import About from "./pages/About";
 import Portifolio from "./pages/Portifolio";
 import Contact from "./pages/Contact";
 
-import { ContactMailTemplate } from "./templates/Mail";
-
 const MyRoutes = () => {
     return (
         <Router>

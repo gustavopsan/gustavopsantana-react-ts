@@ -12,8 +12,10 @@ import contactBackground from "../assets/img/contact-background.webp";
 
 import "../styles/contact.scss";
 import { renderContactEmail } from "../modules/renderEmail";
+import useAnalyticsEventTracker from '../modules/useAnalyticsEventTracker';
 
 const Contact = () => {
+    const gaEventTracker = useAnalyticsEventTracker('Contact')
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -122,7 +124,7 @@ const Contact = () => {
 
                             <span id="form-message" className="hidden">O campo "nome" não pode estar vazio, preencha todos os campos para continuar</span>
 
-                            <button type="submit" className="btn btn-primary">Deixar Mensagem</button>
+                            <button type="submit" className="btn btn-primary" onClick={ () => gaEventTracker('email') }>Deixar Mensagem</button>
                         </form>
                     </Aligner>
                 </Aligner>
