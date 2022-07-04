@@ -3,13 +3,13 @@ import ReactGA from 'react-ga';
 
 import MyRoutes from './Routes';
 
-const TRACKING_ID = "G-EWWRYG4X97";
+const TRACKING_ID = "UA-226363006-1";
 
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.pageview(window.location.pathname);
   }, []);
 
   return (
