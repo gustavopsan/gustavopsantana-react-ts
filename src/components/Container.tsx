@@ -3,18 +3,30 @@ import "../styles/container.scss";
 
 export interface ContainerProps {
     children: React.ReactNode;
-    backgroundImage: string;
+    backgroundImage?: string;
+    backgroundColor?: string;
+    borderBottom?: string;
+    id?: string;
 }
 
 const Container = (props:ContainerProps) => {
 
-    const style = {
-        backgroundImage: `url(${props.backgroundImage})`
-    }
+    const { children, backgroundImage, backgroundColor, borderBottom, id} = props;
+    var style = {} as object;
 
+    if (backgroundImage) {
+        Object.assign( style, { backgroundImage: `url(${backgroundImage})` })
+    }
+    if (backgroundColor) {
+        Object.assign( style, { backgroundColor: backgroundColor })
+    }
+    if (borderBottom) {
+        Object.assign( style, { borderBottom: borderBottom })
+    }
+    
     return (
-        <section className="container-element" style={style}>
-            {props.children}
+        <section className="container-element" style={style} id={id}>
+            {children}
         </section>
     )
 }

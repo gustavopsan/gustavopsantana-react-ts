@@ -8,9 +8,17 @@ export interface AlignerProps {
     center?: boolean;
     end?: boolean;
     start?: boolean;
+    limiter?: number;
 }
 
 const Aligner = (props:AlignerProps) => {
+
+    var style = {};
+
+    if (props.limiter) {
+        Object.assign(style, { maxWidth: props.limiter + "px" });
+    }
+
     return (
         <div className={
             [
@@ -20,7 +28,7 @@ const Aligner = (props:AlignerProps) => {
                 props.end ? "aligner-end" : "",
                 props.start ? "aligner-start" : ""
             ].join(" ")
-        }>
+        } style={style}>
             {props.children}
         </div>
     )

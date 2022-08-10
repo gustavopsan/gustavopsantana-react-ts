@@ -9,19 +9,18 @@ export interface ButtonProps {
 
 const Button = (props:ButtonProps) => {
 
-    if (props.width) {
-        return (
-            <button className="button-contact" style={{ width: props.width }} onClick={props.onClick}>
-                {props.children}
-            </button>
-        );
-    } else {
-        return (
-            <button className="button-contact" onClick={props.onClick}>
-                {props.children}
-            </button>
-        );
+    const { children, onClick, width } = props;
+    var style = {} as object;
+
+    if (width) {
+        Object.assign( style, { width: width })
     }
+
+    return (
+        <button className="button-contact" style={style} onClick={onClick}>
+            {children}
+        </button>
+    );
 }
 
 export default Button;
