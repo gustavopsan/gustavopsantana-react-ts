@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "gustavopsantana.dev.br",
+  "Id": "86fe9f5f-e794-4e48-b492-a7c7d2cefb0d"
+}
